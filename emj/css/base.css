@@ -1,0 +1,294 @@
+.topNav {
+	background: #eee;
+}
+
+.nav {
+	width: 1192px;
+	height: 30px;
+	background: #eee;
+	margin: 0 auto;
+}
+
+.navL {
+	width: 448px;
+	height: 30px;
+	background: #eee;
+	float: left;
+}
+
+.navL_o {
+	color: #666;
+	line-height: 30px;
+	float: left;
+}
+
+.navL_o span {
+	color: #e14041
+}
+
+.navL_tw {
+	line-height: 30px;
+	color: #666;
+	float: left;
+	margin-left: 10px;
+}
+
+.verline {
+	padding: 0 10px;
+}
+
+.navL_mb {
+	float: left;
+	overflow: hidden;
+}
+
+.mb_bg1 {
+	background: url(../img/Sprite/index.png) no-repeat -0px -175px;
+	width: 10px;
+	height: 17px;
+	float: left;
+	margin-top: 6px;
+}
+
+.navL_mb a {
+	line-height: 30px;
+	color: #666;
+	margin-left: 3px;
+}
+
+.mb_bg2 {
+	background: url(../img/Sprite/index.png) no-repeat -5px -210px;
+	width: 7px;
+	height: 4px;
+	float: right;
+	margin-top: 15px;
+	margin-left: 3px;
+}
+
+.navCent {
+	margin-left: 85px;
+	float: left;
+}
+
+.navCent a {
+	float: left;
+	font-weight: bold;
+}
+
+.navCent_bg {
+	float: left;
+	background: url(../img/Sprite/index.png) no-repeat -0px -660px;
+	width: 15px;
+	height: 14px;
+	padding: 0 5px;
+}
+
+.navCent {
+	margin-top: 5px;
+}
+
+.navR {
+	float: right;
+}
+
+.navR a {
+	line-height: 30px;
+	border-right: 1px solid #666;
+	padding: 0 10px;
+}
+
+.navR .navRa {
+	color: #e60000;
+}
+
+.navAhor:hover {
+	color: #e60000;
+}
+
+.header_bodyG {
+	background: #f7f7f7;
+}
+
+.header_body {
+	width: 1192px;
+	height: 142px;
+	background: #f7f7f7;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.logo {
+	background: url(../img/Sprite/index.png) no-repeat 0px 0px;
+	width: 341px;
+	height: 71px;
+	margin-top: 48px;
+	float: left;
+}
+
+.header_Seach {
+	float: left;
+	margin-top: 34px;
+}
+
+#search_form {
+	width: 507px;
+	height: 41px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+}
+
+.seach_input {
+	width: 460px;
+	height: 41px;
+	border: 0;
+	text-indent: 6px;
+}
+
+.seach_btn {
+	background: url(../img/Sprite/index.png) no-repeat -0px -90px;
+	width: 22px;
+	height: 20px;
+	border: 0;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.headerSearchHotkey {
+	width: 507px;
+}
+
+.headerSearchHotkey a {
+	padding: 0 3px;
+	line-height: 32px;
+}
+
+.headerSearchHotkey span {
+	color: #666;
+}
+
+.headerCart {
+	float: right;
+	width: 150px;
+	height: 32px;
+	background: #f7f7f7;
+	margin: 42px 100px 0 0;
+}
+
+.CartBg {
+	background: url(../img/Sprite/index.png) no-repeat -0px -135px;
+	width: 30px;
+	height: 28px;
+	float: left;
+}
+
+.headerCart a {
+	float: left;
+	line-height: 32px;
+	margin-left: 10px;
+}
+
+.headerCart strong {
+	color: #e14041;
+}
+
+.headerNavG {
+	background: #eeeeee;
+	border-bottom: 1px solid #e60000;
+}
+
+.headerNav {
+	width: 1192px;
+	height: 49px;
+	background: lightskyblue;
+	margin: 0 auto;
+	position: relative;
+	
+}
+
+.headerNav_ul {
+	float: left;
+	padding-left: 200px;
+}
+
+.headerNav_ul li {
+	float: left;
+	line-height: 49px;
+	width: 133px;
+	text-align: center;
+}
+
+.headerNav_ul li a {
+	font-family: "微软雅黑";
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.headerNav_ul .active {
+	border-bottom: 3px solid #e60021;
+	height: 47px;
+	text-align: center;
+}
+
+.headerNav_ul .active a {
+	color: #e60021;
+}
+
+.headerNav_ul .line {
+	width: 0;
+	height: 24px;
+	margin-top: 13px;
+	border-right: 1px solid #d2d2d2;
+	font-size: 0;
+}
+.sideMenu{
+	
+	width: 200px;
+	height: 490px;
+	background: cadetblue;
+	position: absolute;
+	left: 0;
+	top: 0;
+	
+}
+.title{
+	height: 50px;
+	background: #e60000
+}
+.title p{
+	line-height: 50px;
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
+	font-weight: bold;
+	background: url(../img/Sprite/index.png) no-repeat 148px -608px ;
+	
+}
+.list{
+	width: 200px;
+	height: 440px;
+	cursor: pointer;
+	background: cadetblue;
+	
+}
+.list li{text-align: center;
+border-bottom: 1px solid #f2f0f0;
+height: 36px;
+line-height: 36px;
+position: relative;
+
+}
+.list li:hover{
+	
+	background:#e60000 ;
+}
+
+
+.list li a{color: #000; padding: 0 15px; font-size: 14px;}
+.list span{ background: url(../img/Sprite/index.png) no-repeat  -187px -78px; width: 4px; height: 7px;
+position: absolute; right: 13px; top: 18px;
+}
+.list_detail{width: 585px; height: 373px; background: cadetblue; position: absolute; left: 200px;top: 50px;}
+.list_detail li a{padding: 0 14px;}
+.list_detail li { margin-top: 15px; margin-left: 10px;}
+.detail_title{background: url(../img/rightIco.png) no-repeat right center; width: 85px; display: inline-block; font-size: 14px;}
+.detail_item a{ border-right: 1px solid #ccc;}
