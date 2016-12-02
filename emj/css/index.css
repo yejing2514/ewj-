@@ -1,0 +1,80 @@
+
+.banner_list{
+	position: relative;
+	width: 100%;
+	height: 440px;	
+	
+	
+}
+
+.banner_picU{
+position: relative;	
+width: 100%;
+z-index: 5;
+height: 440px;
+overflow: hidden;
+	
+}
+.banner_picU li{
+	width: 100%;
+	height: 440px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	filter:alpha(opacity=0);
+	
+}
+.banner_picU  a{
+	display: inline-block;
+	background: url(../img/bannerBaby.jpg) no-repeat center 0;
+	width: 100%;
+	height: 100%;
+	line-height: 400px;
+	
+	
+		
+}
+.listUl{
+	position: absolute;
+	z-index: 6;
+	bottom: 10px;
+	width: 100%;
+	left: 0;
+	text-align: center;
+	
+	
+}
+.listUl li{
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	margin-left: 10px;
+	border: 2px solid #fff;
+	border-radius: 83px;
+	
+	
+}
+.listUl .listActive{
+	
+	border-color: #e14041;
+	background:#e14041;	
+}
+.flashSaleG{background: #EDEDED; overflow: hidden;}
+.flashSale{
+	width: 1192px;
+	background: #FFD93F;
+	margin: 100px auto;
+	height: 485px;
+	
+	
+	
+}
+.flashSaleTop{
+	width: 645px;
+	height: 92px;
+	
+}
+
+
+	
