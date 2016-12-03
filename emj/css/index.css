@@ -1,80 +1,281 @@
-
-.banner_list{
+.banner_list {
 	position: relative;
 	width: 100%;
-	height: 440px;	
-	
-	
+	height: 440px;
 }
 
-.banner_picU{
-position: relative;	
-width: 100%;
-z-index: 5;
-height: 440px;
-overflow: hidden;
-	
+.banner_picU {
+	position: relative;
+	width: 100%;
+	z-index: 5;
+	height: 440px;
+	overflow: hidden;
 }
-.banner_picU li{
+
+.banner_picU li {
 	width: 100%;
 	height: 440px;
 	position: absolute;
 	left: 0;
 	top: 0;
 	opacity: 0;
-	filter:alpha(opacity=0);
-	
+	filter: alpha(opacity=0);
 }
-.banner_picU  a{
+
+.banner_picU a {
 	display: inline-block;
 	background: url(../img/bannerBaby.jpg) no-repeat center 0;
 	width: 100%;
 	height: 100%;
 	line-height: 400px;
-	
-	
-		
 }
-.listUl{
+
+.listUl {
 	position: absolute;
 	z-index: 6;
 	bottom: 10px;
 	width: 100%;
 	left: 0;
 	text-align: center;
-	
-	
 }
-.listUl li{
+
+.listUl li {
 	display: inline-block;
 	width: 8px;
 	height: 8px;
 	margin-left: 10px;
 	border: 2px solid #fff;
 	border-radius: 83px;
-	
-	
 }
-.listUl .listActive{
-	
+
+.listUl .listActive {
 	border-color: #e14041;
-	background:#e14041;	
+	background: #e14041;
 }
-.flashSaleG{background: #EDEDED; overflow: hidden;}
-.flashSale{
+
+.flashSaleG {
+	background: #EDEDED;
+	overflow: hidden;
+}
+
+.flashSale {
 	width: 1192px;
 	background: #FFD93F;
 	margin: 100px auto;
-	height: 485px;
-	
-	
-	
+	padding: 1px;
 }
-.flashSaleTop{
+
+.flashSaleTop {
 	width: 645px;
 	height: 92px;
+	background: FFD93F;
+	margin: 0 auto;
+}
+
+.fla_logo {
+	width: 98px;
+	height: 116px;
+	background: url(../img/Sprite/flashSale.png) no-repeat 0 0;
+	margin-top: -26px;
+	float: left;
+}
+
+.fla_Ico {
+	width: 16px;
+	height: 12px;
+	background: url(../img/Sprite/flashSale.png) no-repeat 0 -135px;
+	position: absolute;
+	left: -16px;
+	top: 28px;
+}
+
+.dead_time_box {
+	width: 520px;
+	height: 64px;
+	background: #F5C501;
+	border-radius: 6px;
+	margin: 15px 0 0 22px;
+	float: left;
+	position: relative;
+}
+
+.dt_icon {
+	background: url(../img/Sprite/flashSale.png) no-repeat -0px -165px;
+	width: 122px;
+	height: 51px;
+	margin: 8px 0 0 24px;
+	border-right: 1px solid #252525;
+	float: left;
+}
+
+.time_box {
+	width: 352px;
+	height: 64px;
+	float: right;
 	
 }
 
+.time_box span {
+	font-size: 18px;
+	line-height: 64px;
+}
 
+.time_box .numDay1,
+.time_box .numDay2,
+.time_box .numHour1,
+.time_box .numHour2,
+.time_box .numMinute1,
+.time_box .numMinute2 {
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+	border-radius: 50%;
+	line-height: 23px;
+	border: 1px solid #252525;
+	text-align: center;
+}
+.shop_cont{
+	width: 1160px;
+	height: 366px;
+	background: #FFD93F;
+	margin: 0 auto;
+	margin-bottom: 28px;
+	/*overflow: hidden;*/
 	
+	
+}
+.newGoodsList{
+	
+	width: 278px;
+	height: 365px;
+	float: left;
+	margin-left: 8px;
+	position: relative;
+	
+}
+.mask{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: -1px;
+	top: -1px;
+	border: 1px solid #E60000;
+	display: none;
+}
+.img_view{
+	display: block;
+	width: 278px;
+	height: 258px;
+	text-align: center;
+	overflow: hidden;
+	background: #FFFFFF;
+	
+	
+}
+.img_viewP img{
+	margin: 0 auto;
+	width: 226px;
+	height: 226px;
+}
+.jx_box{
+	width: 100%;
+	height: 32px;
+	background: #fff;
+	overflow: hidden;
+	
+	
+}
+.img_country{
+	width: 18px;
+	height: 18px;
+	margin-top: 8px;
+	margin-left: 10px;
+	float: left;
+	
+	
+}
+.img_country img{
+	width: 18px;
+	height: 18px;	
+	
+}
+.img_title{
+	float: left;
+	line-height: 32px;
+	padding: 0 8px;
+	
+}
+.cont_bottm{
+	
+	width: 100%;
+	height: 106px;
+	background: #fff;
+	position: relative;
+}
+.shop_info{
+	height: 36px;
+	overflow: hidden;
+	background: #fff;
+	padding: 0 10px;
+	position: relative;
+	border-bottom: 1px solid #ededed;
+	z-index: 99;
+}
+
+.shop_name{
+	width: 260px;
+	height: 36px;
+	line-height: 36px;
+	overflow: hidden;
+	font-weight: normal;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	position: relative;
+	font-size: 14px;
+	padding-left: 3px;
+	overflow: hidden;
+	bottom: 0px;
+	
+}
+.shop_name a{
+	color: #000000;
+	
+}
+.intro{
+	color: #535353;
+	padding: 0 25px 0 10px;
+	line-height: 20px;
+	height: 40px;
+	position: absolute;
+	margin-top: 6px;
+	text-overflow: ellipsis;
+	z-index: 800;
+	top: 26px;
+	font-size: 14px;
+	overflow: hidden;
+}
+
+
+.shop_pri{
+	
+	margin-top: 8px;
+	text-align: left;
+	color: #959595;
+	font-size: 18px;
+	padding-top: 15px;
+	
+	
+}
+.shop_pri span{
+	
+	font-size: 32px;
+	color: #E60000;
+	padding: 0 10px 0 10px;
+	font-family: arial;
+	
+}
+.shop_pri span em{
+	
+	font-size: 22px;
+	
+}

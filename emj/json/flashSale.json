@@ -1,0 +1,47 @@
+{
+	"img_src": [
+		"img/flashSalel/flashList1.jpg",
+		"img/flashSalel/flashList2.jpg",
+		"img/flashSalel/flashList3.jpg",
+		"img/flashSalel/flashList4.jpg"
+	],
+	"img_logo": [
+		"img/flashSalel/Japan.png",
+		"img/flashSalel/wanjia.png",
+		"img/flashSalel/Germany.png",
+		"img/flashSalel/Australia.png"
+	],
+	"title":[
+			"日本|保税",
+			"万家精选",
+			"德国|保税",
+			"澳大利亚|保税"
+	],
+	"category":[
+			"花王蒸汽腹部舒缓贴 5枚",
+			"【全国配送】TCL空气加湿器TE-CD201A1",
+			"德国Brita碧然德 Marella系列 3.5L 1壶1芯(白色)",
+			"澳大利亚Nature's Way代餐奶昔巧克力口味 375g"
+	],
+	"intro":[
+			"携带方便，缓解女性生理期间的腹部疼痛与不适，促进肠胃蠕动与血液循环",
+			"1 360°方向加湿；2 缺水断电保护；3.净化滤芯4 雾量可调；5 七彩灯LED呼吸灯；6 可抽取香薰盒。",
+			"摸着良心推荐！现在水质污染问题那么严重，烧水壶永远积着厚厚的一层水垢，可是BRITA会让一切变得不一样！来自德国的滤水专家，简洁完美的设计，让尖端科技如此平易近人。为了身体健康喝出健康水，入手这个吧！",
+			"奶昔与正餐的合理搭配，让您在享瘦的同时摆脱节食带来的种种困扰和不适应感；无需节食或过度运动，轻松甩脂；天然食材，代餐奶昔让您拥有饱腹感，从而降低食物摄取；香浓的巧克力口感，让您享瘦不停。"
+	],
+	"price":[
+			"29.90",
+			"69.00",
+			"149.00",
+			"75.00"
+	],
+	"priceDel":[
+			"38.90",
+			"79.00",
+			"169.00",
+			"99.00"
+	]
+	
+	
+	
+}
