@@ -61,7 +61,8 @@
 .flashSale {
 	width: 1192px;
 	background: #FFD93F;
-	margin: 100px auto;
+	margin: 0px auto;
+	margin-top: 100px;
 	padding: 1px;
 }
 
@@ -278,4 +279,299 @@
 	
 	font-size: 22px;
 	
+}
+.sellGoodsG{
+	background: #EDEDED;
+	overflow: hidden;
+}
+.sellGoods{
+	width: 1192px;
+	height: 430px;
+	margin: 0 auto;
+	background: #EDEDED;
+	overflow: hidden;
+	margin-top: 30px;
+	
+}
+.GoodsTop{
+	
+	width: 100%;
+	overflow: hidden;
+	border-bottom: 2px solid #E60000;
+}
+.GoodsTopLogo{
+	background: url(../img/Sprite/index.png) no-repeat  -0px -240px; 
+	width: 190px;
+	height: 38px;;
+}
+.GoodsPro{
+	width: 1192px;
+	background: #EDEDED;
+	/*background: greenyellow;*/
+	margin-top: 10px;
+	
+}
+.newGoods{
+	float: left;
+	width: 237px;
+	height: 379px;
+	position: relative;
+	background: #fff;
+	margin-left: 1px;
+}
+.goods_view{
+	
+	display: block;
+	width:218px;
+	height:250px;
+	text-align:center;
+	position:relative;
+	margin: 10px auto 0;
+	background: darkslateblue;
+	overflow: hidden;
+	
+}
+.tag{
+	
+	width: 54px;
+	height: 54px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.tag img{
+	width: 54px;
+	height: 24px;
+}
+.goods_bottom{
+	
+	width: 218px;
+	height: 140px;
+	background: #fff;
+	margin: 0 auto;
+	
+}
+.shop_name{
+	
+	width: 213px;
+	height: 30px;
+	line-height: 30px;
+	/*border-bottom: 1px solid  #ededed;*/
+	overflow: hidden;
+	font-weight: normal;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	
+}
+.shop_name a{
+	font-size: 14px;
+	color: #252525;
+	
+}
+.goods_intro{
+	
+	color: #959595;
+	font-size: 12px;
+	line-height: 20px;
+	height: 40px;
+	overflow: hidden;
+	font-weight: normal;
+	margin-top: 8px;
+	text-overflow: ellipsis;	
+}
+.goods_price{
+	width: 218px;
+	height: 34px;
+	background: #fff;
+	margin-top: 8px;
+	
+}
+
+.goods_price span {
+	line-height: 34px;
+	font-size: 24px;
+	color: #E60000;
+	padding: 0 10px 0 10px;
+	font-family: arial;
+	
+}
+.goods_price span em{
+	font-size: 18px;
+	
+}
+
+.goods_price del{
+	font-size: 14px;
+	color: #959595;
+}
+.newArrivalG{
+	
+	background: #EDEDED;
+	overflow: hidden;
+	
+}
+.newArrival{
+	width: 1192px;
+	height: 670px;
+	margin: 0 auto;
+	overflow: hidden;
+	background: #EDEDED;
+	margin-top: 30px;
+	
+	
+}
+.arrivalTop{
+	
+	width: 100%;
+	overflow: hidden;
+	border-bottom: 2px solid #2a71b9
+	
+}
+.arrivalTopLogo{
+	background: url(../img/Sprite/index.png) no-repeat  -0px -305px; 
+	width: 190px;
+	height: 38px;;
+	
+}
+.arrivalPro{
+	width: 1192px;
+	margin-top: 10px;
+	/*overflow: hidden;*/
+	
+}
+.arrivalGoods{
+	
+	width: 590px;
+	height: 300px;
+	margin-bottom: 10px;
+	background: #fff;	
+	position: relative;
+	margin-left: 1px;
+	float: left;
+	margin-right: 5px;
+}
+.arrival_view{
+	display: block;
+	width: 280px;
+	height: 280px;
+	float: left;
+	margin: 10px 0 10px 10px;
+	position: relative;
+	
+	
+}
+.arrival_bottm{
+	
+	float: left;
+	width: 260px;
+	height: 240px;
+	padding: 30px 20px;
+	position: relative;
+	background: #fff;
+	
+}
+.jj_box{
+	width: 260px;
+	height: 33px;
+	/*padding-bottom: 10px;*/
+	text-align: left;
+	font-size: 12px;
+	color: #555;
+	border-bottom: 1px solid #ededed;
+	overflow: hidden;
+	
+	
+}
+.jj_p1{
+	width: 18px;
+	height: 18px;
+	margin-top: 6px;
+	float: left;
+	
+}
+.jj_p1 img{
+	width: 18px;
+	height: 18px;
+}
+.jj_box span{
+	line-height: 28px;
+	float: left;
+	margin-left: 10px;	
+}
+.jj_p2{
+	
+	width: 260px;
+	height: 35px;
+	line-height: 35px;
+	border-bottom: 1px solid #ededed;
+	overflow: hidden;
+	font-weight: normal;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.jj_p2 a{
+	
+	color: #252525;
+	font-size: 14px;
+}
+.jj_p3{
+	
+	color: #959595;
+	font-size: 12px;
+	line-height: 20px;
+	height: 60px;
+	overflow: hidden;
+	font-weight: normal;
+	margin-top: 8px;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	word-break: break-all;
+	-webkit-box-orient: vertical;
+	
+}
+.btn_box{
+	
+	text-align: left;
+	position: absolute;
+	left: 20px;
+	bottom: 30px;
+	
+	
+}
+.btn_box a{
+	display: inline-block;
+	width: 180px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #E60000;
+	font-size: 18px;
+	border: 1px solid #E60000;
+	
+}
+.CartTip{
+	
+	display: none;
+	position: absolute;
+	right: 0;
+	bottom: 48px;
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	text-align: center;
+	background: #fff;
+	box-shadow: 0 2px 2px #ccc;
+	padding-left: 4px;
+	
+	
+}
+.CartP{
+	
+	width: 15px;
+	height: 15px;
+	background: url(../img/true.png) no-repeat;
+	margin-top: 7px;
+	float: left;
 }

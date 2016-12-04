@@ -1,0 +1,60 @@
+{
+	"img_src": [
+		"img/sellGoods/mask.jpg",
+		"img/sellGoods/waterCup.jpg",
+		"img/sellGoods/gaolegao.jpg",
+		"img/sellGoods/ShowerGel.jpg",
+		"img/sellGoods/Aromatherapy.jpg"
+	],
+	"img_logo": [
+		"img/flashSalel/Korea.png",
+		"img/flashSalel/Japan.png",
+		"img/flashSalel/Australia.png",
+		"img/flashSalel/Korea.png",
+		"img/flashSalel/Japan.png"
+	],
+		"tag_logo": [
+		"img/sellGoods/ebeLogo.png",
+		"img/sellGoods/ebeLogo.png",
+		"img/sellGoods/ebeLogo.png",
+		"img/sellGoods/ebeLogo.png",
+		"img/sellGoods/ebeLogo.png"
+	],
+	
+	
+	"title": [
+		"韩国|保税",
+		"日本|保税",
+		"澳大利亚|保税",
+		"韩国|保税",
+		"日本|保税"
+	],
+	"category": [
+		"伊思晶钻蜗牛精华面膜 25g*5片",
+		"虎牌新款梦重力超轻不锈钢单手开盖保温保冷杯 蓝黑色600ml MMJ-A060-KA",
+		"BIO ISLAND 婴幼儿增长素 90粒",
+		"LG On The Body 紫色梦幻香水淋浴露500ml",
+		"美健 房间香熏剂  喷洒型 樱花香型  150ml"
+	],
+	"intro": [
+		"内含螺旋蜗牛分泌液，能全面改善皮肤素质。尤其对于淡化疤痕、暗疮印、斑点和缩小毛孔方面有非常神奇的功效。使用后，肌肤能明显变得柔嫩紧实，细纹减少，较深的皱纹与粗大的毛孔也能轻易获得改善，甚至最干燥及过敏性肌肤也能恢复到健康自然的状态。",
+		"虎牌采用最新一代电解研磨技术，使得内壁更加光滑。保温杯内的真空隔热层新添了热辐射反射膜，使得其具有更加持久的保温时长，经实验能达到68度以上6小时左右，9℃以下也可保冷达6小时。双层不锈钢材质，本体重量190克，单手弹盖设计非常方便",
+		"促进生长、增强体质、增强智力、提高记忆力、增进食欲、改善营养不良",
+		"保湿、滋润、美白，延缓细胞老化，增强肌肤弹性，沐浴后，肌肤留下清雅自然的芳香，香味持久。泡沫柔细，温和洁净肌肤，洗后肌肤清爽柔嫩、滋润不干涩，使全身散发柔和且独特傲人的迷迭香味。",
+		"来自日本的樱花香薰剂，清新的春天气息，让房间浸溺在浪漫、优雅、洁净的芬芳中。熏香采自日本樱花，保留最天然的清新味道"
+	],
+	"price": [
+		"99.00",
+		"249.00",
+		"139.00",
+		"29.90",
+		"129.00"
+	],
+	"priceDel": [
+		"109.90",
+		"259.00",
+		"",
+		"34.90",
+		""
+	]
+}

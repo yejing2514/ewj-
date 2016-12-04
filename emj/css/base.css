@@ -119,11 +119,74 @@
 	overflow: hidden;
 }
 
+.header_bodyFixed {
+	position: fixed;
+	width: 1190px;
+	height: 54px;
+	left: 50%;
+	top: -5px;
+	margin-left: -595px;
+	z-index: 1111;
+	padding: 10px 0;
+	background: #fff;
+	opacity: 0.9;
+	box-shadow: 0 3px 3px rgba(9, 2, 4, 0.2);
+}
+
+.header_bodyFixed {
+	-webkit-animation: searchTop .5s ease-in-out;
+	-moz-animation: searchTop .5s ease-in-out;
+	animation: searchTop .5s ease-in-out
+}
+
+@-webkit-keyframes searchTop {
+	0% {
+		top: -50px
+	}
+	100% {
+		top: 0
+	}
+}
+
+@-moz-keyframes searchTop {
+	0% {
+		top: -50px
+	}
+	100% {
+		top: 0
+	}
+}
+
+@keyframes searchTop {
+	0% {
+		top: -50px
+	}
+	100% {
+		top: 0
+	}
+}
+
+.headerScrollNav {
+	height: 30px;
+	width: 650px;
+	margin-top: 14px;
+	display: none;
+}
+
+.headerScrollNav li {
+	float: left;
+	white-space: nowrap;
+	font-size: 14px;
+	border-left: 1px solid #c5c5c5;
+	padding: 0 10px;
+	margin: 5px 0 5px -1px;
+}
+
 .logo {
 	background: url(../img/Sprite/index.png) no-repeat 0px 0px;
 	width: 341px;
 	height: 71px;
-	margin-top: 48px;
+	margin-top: 30px;
 	float: left;
 }
 
@@ -138,6 +201,8 @@
 	border: 1px solid #ccc;
 	overflow: hidden;
 	position: relative;
+	top: 0;
+	left: 0;
 }
 
 .seach_input {
@@ -189,6 +254,10 @@
 	float: left;
 	line-height: 32px;
 	margin-left: 10px;
+}
+.headerCart span{
+	font-size: 14px;
+	
 }
 
 .headerCart strong {
@@ -345,14 +414,15 @@
 .foot_camG {
 	background: #EDEDED;
 }
-.foot_mapG{
+
+.foot_mapG {
 	background: #EDEDED;
-	
 }
-.foot_contectG{
-	
-background: #EDEDED;
+
+.foot_contectG {
+	background: #EDEDED;
 }
+
 .foot_cam {
 	background: #EDEDED;
 	width: 1192px;

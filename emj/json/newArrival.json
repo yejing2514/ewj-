@@ -1,0 +1,53 @@
+{
+	"img_src": [
+		"img/newArrival/nAList.jpg",
+		"img/newArrival/nAList2.jpg",
+		"img/newArrival/nAList3.jpg",
+		"img/newArrival/nAList4.jpg"
+		
+	],
+	"img_logo": [
+		"img/flashSalel/Japan.png",
+		"img/flashSalel/Thailand.png",
+		"img/flashSalel/Norway.png",
+		"img/flashSalel/Korea.png"
+	],
+		"tag_logo": [
+		"img/sellGoods/ebeLogo.png",
+		"img/sellGoods/ebeLogo.png",
+		"img/sellGoods/ebeLogo.png",
+		"img/sellGoods/ebeLogo.png"
+	],
+	
+	
+	"title": [
+		"日本|保税",
+		"泰国|保税",
+		"挪威|保税",
+		"韩国|保税"
+	],
+	"category": [
+		"象印2016新款不锈钢单手开盖保温保冷杯 限量版肉桂金  480ml SM-SC48S-NM",
+		"小老板鱿鱼味香脆海苔(盒装）9条",
+		"LIFELINE CARE 多种维生素复合儿童免疫力营养素",
+		"SU:M 37°呼吸时光能量修复水乳霜三件套"
+	],
+	"intro": [
+		"超轻不锈钢保温杯采用独家技术SLIT，超薄真空层仅厚1mm，超轻手感，重约205克。十分轻便，适合随身携带，不锈钢真空双重结构，保温效能非常好，95度的热水在6小时后能保持到71度以上，4度的冰水在6小时后还能保持到8度以下。医用304不锈钢材，安全无毒。双面超密度科技涂层，防止异味残留，外壳防止凝结露水，即便是夏天携带冷饮，也不会出现杯壁打湿包包的情况",
+		"小老板海苔选用海苔为原料，口感香脆美味；比一般的海苔厚实、松脆；未入口已经被可口的鱿鱼味道所吸引，轻轻地咀嚼，嘴巴咔擦咔擦脆的声音，一直环绕在耳边；海苔卷独立包装，卫生便捷享受美味",
+		"活跃人体免疫细胞、增强抵抗力、复合维生素科学配方，提供儿童成长均衡营养。产品符合北欧和欧盟双重标准，安全有效，值得信赖。宝宝爱吃，天然草莓、覆盆子、橘子三种口味，每天不一样的选择",
+		"【韩国直邮】时光基底修肤水160ml+时光基底柔肤乳130ml+时光基底保湿紧致面霜50ml+时光基底修肤水20ml+时光基底柔肤乳20ml+时光基底保湿紧致面霜10ml+时光基底精华5ml+焕肤精粹温和洁面40ml"
+	],
+	"price": [
+		"219.00",
+		"12.00",
+		"129.00",
+		"538.90"
+	],
+	"priceDel": [
+		"269.00",
+		"14.80",
+		"",
+		"629.00"
+	]
+}
