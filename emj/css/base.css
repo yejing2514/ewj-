@@ -12,7 +12,7 @@
 }
 
 .navL {
-	width: 448px;
+	width: 484px;
 	height: 30px;
 	background: #eee;
 	float: left;
@@ -40,7 +40,7 @@
 }
 
 .navL_mb {
-	float: left;
+	float: right;
 	overflow: hidden;
 }
 
@@ -315,8 +315,6 @@
 
 .sideMenu {
 	width: 200px;
-	height: 490px;
-	background: cadetblue;
 	position: absolute;
 	left: 0;
 	top: 0;

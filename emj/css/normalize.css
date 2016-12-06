@@ -6,5 +6,6 @@ a{text-decoration:none; color:#666;}
 h1,h2,h3,h4,h5,h6{font-weight:100;}
 body{font-size:12px; font-family:"微软雅黑";}
 input,a,button{outline:none;}
-body{min-width: 1192px;}
+body{min-width: 1192px; background: #EDEDED;}
 em,i{font-style: normal;}
+

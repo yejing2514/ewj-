@@ -1,0 +1,104 @@
+a:hover{
+	color: #E60000;
+	
+}
+input{
+	
+	-webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -ms-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+	
+}
+
+input:focus {
+    color: #666;
+    border-color: #e04040;
+}
+
+
+.lrheaderG{
+	background: #F8F8F8;
+	 box-shadow: 0 0 10px rgba(9, 2, 4, .12);
+    position: relative;
+	
+}
+
+.lrheader{
+	width: 1192px;
+	height: 114px;
+	background: #F8F8F8;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+	
+}
+.lrheaderBg{
+	background: url(../img/Sprite/index.png) no-repeat 0px 0px;
+	width: 341px;
+	height: 71px;
+	margin-top: 26px;
+	margin-left: 60px;
+	float: left;
+}
+.lrheaderTitle{
+	
+	float: right;
+	line-height: 114px;
+	color: #666;
+	margin-right: 60px;
+	
+	
+}
+.lrheaderTitle span{
+	border-right: 1px solid #666;
+	padding: 0 14px;
+	
+}
+.lrheaderTitle a{
+	padding: 0 14px;	
+	
+}
+.lrBottomG{
+	
+	background: #EDEDED;
+}
+.lrBottom{
+	
+	width: 1192px;
+	height: 132px;
+	margin: 0 auto;
+	
+}
+.lrBottomList{
+	
+	line-height: 132px;
+	text-align: center;
+	font-size: 14px;
+	
+}
+.lrBottomList a{
+	
+	padding: 0 14px;
+	border-right: 1px solid #ccc;
+}
+.panelHd{
+	height: 45px;
+	line-height: 45px;
+	padding: 0 30px;
+	border-bottom: 2px solid #EDEDED;
+	
+	
+}
+.panelHd span{
+	font-size: 14px;
+	float: left;
+	
+}
+.panelHd a{
+	font-size: 14px;
+	color: #E60000;
+	float: right;
+	text-decoration: underline;	
+}

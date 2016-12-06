@@ -1,0 +1,53 @@
+{
+	"img_src": [
+		"img/crossBorderTra/crossList.jpg",
+		"img/crossBorderTra/crossList1.jpg",
+		"img/crossBorderTra/crossList2.jpg",
+		"img/crossBorderTra/crossList3.jpg"
+		
+	],
+	"img_logo": [
+		"img/flashSalel/Korea.png",
+		"img/flashSalel/Japan.png",
+		"img/flashSalel/Australia.png",
+		"img/flashSalel/Japan.png"
+	],
+		"tag_logo": [
+		"img/sellGoods/ebeLogo.png",
+		"img/sellGoods/ebeLogo.png",
+		"img/sellGoods/ebeLogo.png",
+		"img/sellGoods/ebeLogo.png"
+	],
+	
+	
+	"title": [
+		"韩国|保税",
+		"日本|保税",
+		"澳大利亚|保税",
+		"日本|保税"
+	],
+	"category": [
+		"Whoo后拱辰享美宫中平纹唇膏 7ml",
+		"【四包】花王妙儿舒婴儿纸尿裤大码增量装  L58 片",
+		"澳大利亚 Fatblaster极塑代餐奶昔香草味 430g",
+		"厚木ATSUGI TIGHTS 发热保暖连裤袜 80d 2双装 深灰(110) (FP98812P) M～L"
+	],
+	"intro": [
+		"【韩国直邮】",
+		"凹凸透气，柔点网层，干爽舒适",
+		"Fatblaster继神奇椰子水后，推出的可口奶昔；给微胖界带来福音；奶昔与正餐的合理搭配，让您在享瘦的同时摆脱节食带来的种种困扰和不适应感；无需节食或过度运动，轻松甩脂；天然食材，代餐奶昔让您拥有饱腹感，从而降低食物摄取；香浓的巧克力口感，让您享瘦不停。",
+		"日本女孩子喜欢穿的厚木丝袜！天鹅绒材质超细腻柔软，亚光效果，瞬间美腿塑形；加入了全新的防起球防静电设计，高弹力不易勾丝，更耐穿！Laser heat 处理光热:暖暖的迅速转变成热能的光能量；远红外效应: 通过对人体热能的反射，达到保暖效果。"
+	],
+	"price": [
+		"219.00",
+		"556.00",
+		"99.00",
+		"79.00"
+	],
+	"priceDel": [
+		"",
+		"569.00",
+		"",
+		"89.00"
+	]
+}

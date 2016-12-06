@@ -1,0 +1,54 @@
+{
+	"img_src": [
+		"img/originDirect/originDirectList.jpg",
+		"img/originDirect/originDirectList1.jpg",
+		"img/originDirect/originDirectList2.jpg",
+		"img/originDirect/originDirectList3.jpg"
+		
+	],
+	"img_logo": [
+		"img/flashSalel/wanjia.png",
+		"img/flashSalel/wanjia.png",
+		"img/flashSalel/wanjia.png",
+		"img/flashSalel/wanjia.png"
+	],
+		"tag_logo": [
+		"img/EnjoyCity/EnjoyCity.png",
+		"img/EnjoyCity/EnjoyCity.png",
+		"img/EnjoyCity/EnjoyCity.png",
+		"img/EnjoyCity/EnjoyCity.png"
+	],
+	
+	
+	"title": [
+		"万家精选",
+		"万家精选",
+		"万家精选",
+		"万家精选"
+		
+	],
+	"category": [
+		"【全国配送】福建漳州红肉蜜柚2个装 2.5-3kg",
+		"【全国配送】新疆红枣夹核桃300g",
+		"【全国配送】腊牛肉片125g",
+		"【全国配送】小萌羊 180天羔羊肉卷 250g*2"
+	],
+	"intro": [
+		"果肉柔嫩，多汁爽口",
+		"红枣加核桃，营养美丽一样不少。",
+		"【全国配】单件包邮",
+		"【全国配】买小萌羊系列产品，北京上海广东满119元包邮，其余城市满199包邮。暂不配送西藏，新疆，内蒙古，港澳台。"
+	],
+	"price": [
+		"48.00",
+		"65.00",
+		"29.80",
+		"58.00"
+	],
+	"priceDel": [
+		"58.00",
+		"",
+		"",
+		"68.00"
+	]
+}

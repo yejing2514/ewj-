@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>用户注册 - e万家 - 爱生活.e万家</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/LoginRegiBase.css" />
+	<link rel="stylesheet" type="text/css" href="css/register.css"/>
+
+	<body>
+		<div class="lrheaderG">
+			<div class="lrheader">
+				<div class="lrheaderBg"></div>
+				<p class="lrheaderTitle">
+					<span> 您好，欢迎您来到华润e万家！</span>
+					<a href="#">帮助中心</a>
+
+				</p>
+
+			</div>
+		</div>
+		
+		
+		<div  class="regBodyG">
+			<div class="regBody">
+				
+				<div class="panelHd">
+				<span>用户注册</span>
+				<a href="#">用户登录</a>
+				
+			</div>
+				<div class="regcontent">
+					
+					<form id="registerForm">
+						
+						<p class="form_group">
+						<label><span style="color: #e14041;">*</span>用户名</label>
+						<input class="regName"  type="text" placeholder="请输入您的用户名，支持4-20字符"/>
+						<br/>
+						<span class="tips">请确认您输入的用户名在4-20字符</span>
+						</p>
+						<p class="form_group">
+						<label style="padding-left: 6px;"><span style="color: #e14041;">*</span>手机号码</label>
+						<input class="regPhone"  type="text" placeholder="输入您的手机号码"/>
+						<br />
+						<span class="tips">请正确填写您的手机号码</span>
+						</p>
+						<p class="form_group">
+						<label><span style="color: #e14041;">*</span>验证码</label>
+						<input class="pin1"  type="text" placeholder="请填写验证码"/>
+							<img src="img/pin/pin.jpg" / class="captchaImg">
+							<a href="javascript:;" id="flushCode">看不清，换一张？</a>
+								<br />
+							<span class="tips"></span>
+						</p>
+						
+						<p class="form_group">
+						<label style="margin-left: -30px;"><span style="color: #e14041;">*</span>短信验证码</label>
+						<input class="pin2"  type="text" placeholder="输入短信验证码"/>
+						<a href="#" class="bindBtn">获得短信验证码</a>	
+							<br />
+							<span class="tips"></span>
+						</p>
+						
+						<p class="form_group">
+						<label style="padding-left: 6px;"><span style="color: #e14041;">*</span>设置密码</label>
+						<input class="regpassword"  type="password" placeholder="请设置您的密码，支持6-20位字符，区分大小写"/>
+						<br />
+							<span class="tips"></span>
+						</p>
+						
+						<p class="form_group">
+						<label style="padding-left: 6px;"><span style="color: #e14041;">*</span>确认密码</label>
+						<input class="againpassword"  type="password" placeholder="请确认密码"/>
+						<br />
+							<span class="tips"></span>
+						</p>
+						
+						<p class="form_group">
+						<label style="margin-left: 5px;">推广码 </label>
+						<input class="pin2"  type="text" placeholder="输入推广码(可不填)"/>
+						</p>
+						<p class="operateReg">
+							<input type="checkbox"  checked="checked"/>
+							<span> 我已阅读并同意</span>
+							<a href="#">e万家服务协议</a>
+							
+						</p>
+						<p class="regBtn">
+							<input type="button" class="RegSignInBtn" value="完成注册" />
+							
+						</p>
+						<p class="qiye"><a href="#">企业用户注册 ></a></p>
+					</form>
+					
+					
+				</div>
+				
+			</div>
+				
+			
+			
+		</div>
+		
+		
+		
+		<div class="lrBottomG">
+			<div class="lrBottom">
+				<p class="lrBottomList">
+					<a href="#">关于我们</a>
+					<a href="#">联系我们</a>
+					<a href="#" style="border: 0;">触屏版</a>
+					<span>Copyright@华润万家有限公司  粤ICP备05036369号-4   ewj.com 版权所有</span>
+
+				</p>
+
+			</div>
+
+		</div>
+		<script type="text/javascript" src="js/jquery-1.11.3.js" ></script>
+		<script type="text/javascript" src="js/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="js/md5.js" ></script>
+		<script type="text/javascript" src="js/loginReg.js" ></script>
+
+	</body>
+
+</html>

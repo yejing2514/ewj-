@@ -1,0 +1,169 @@
+.regBodyG {
+	background: #EDEDED;
+	overflow: hidden;
+}
+
+.regBody {
+	width: 1192px;
+	height: 694px;
+	margin: 0 auto;
+	background: #fff;
+	margin-top: 36px;
+}
+.regcontent{
+	width: 900px;
+	height: 558px;
+	padding-bottom: 10px;
+	font-size: 14px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.regName{
+	width: 373px;
+	min-height: 20px;
+	display: inline-block;
+    line-height: 20px;
+    padding: 12px 15px;
+    font-size: 14px;
+    color: #aaa;
+    background: #fff;
+    border: 1px solid #dadada;
+	
+	
+}
+.form_group label{
+	
+	padding-left: 20px;
+}
+.form_group{
+	
+	margin-top: 10px;
+}
+.tips{
+	color: #E14041;
+	margin-left: 70px;
+	display: none;
+}
+.regPhone{
+	
+	width: 373px;
+	min-height: 20px;
+	display: inline-block;
+    line-height: 20px;
+    padding: 12px 15px;
+    font-size: 14px;
+    color: #aaa;
+    background: #fff;
+    border: 1px solid #dadada;
+}
+
+.pin1{
+	
+	width: 157px;
+	min-height: 20px;
+	display: inline-block;
+    line-height: 20px;
+    padding: 12px 15px;
+    font-size: 14px;
+    color: #aaa;
+    background: #fff;
+    border: 1px solid #dadada;
+}
+.captchaImg{
+	width: 90px;
+	height: 30px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 6px;	
+}
+#flushCode{
+	
+	font-size: 14px;
+	margin-left: 8px;
+	text-decoration: underline;
+}
+.pin2{
+	
+	width: 157px;
+	min-height: 20px;
+	display: inline-block;
+    line-height: 20px;
+    padding: 12px 15px;
+    font-size: 14px;
+    color: #aaa;
+    background: #fff;
+    border: 1px solid #dadada;
+}
+.bindBtn{
+	
+	  display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 11px;
+    color: #333;
+    font-size: 12px;
+    border: 1px solid #d1d1d1;
+}
+.regpassword{
+	width: 373px;
+	min-height: 20px;
+	display: inline-block;
+    line-height: 20px;
+    padding: 12px 15px;
+    font-size: 14px;
+    color: #aaa;
+    background: #fff;
+    border: 1px solid #dadada;
+	
+}
+.againpassword{
+	width: 373px;
+	min-height: 20px;
+	display: inline-block;
+    line-height: 20px;
+    padding: 12px 15px;
+    font-size: 14px;
+    color: #aaa;
+    background: #fff;
+    border: 1px solid #dadada;
+}
+.operateReg{
+	margin-top: 35px;
+	margin-left: 60px;
+	width: 410px;
+}
+.operateReg a{
+	
+	color: #E60000;
+	text-decoration: underline;
+}
+
+.regBtn{
+	margin-top: 10px;
+	margin-left: 60px;
+}
+
+.RegSignInBtn{
+	cursor: pointer;
+	color: #fff;
+    font-size: 24px;
+    background: #e04040;
+    display: inline-block;
+    width:405px;
+    height: 51px;
+    line-height: 51px;
+    text-align: center;
+    padding: 0;
+    border: 0;
+}
+
+.qiye{
+	
+	margin-left: 60px;
+	margin-top: 10px;
+}
+.qiye a{
+	color: blue;
+	
+}
+

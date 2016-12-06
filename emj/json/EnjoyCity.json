@@ -1,0 +1,54 @@
+{
+	"img_src": [
+		"img/EnjoyCity/EnjoyCityList.jpg",
+		"img/EnjoyCity/EnjoyCityList1.jpg",
+		"img/EnjoyCity/EnjoyCityList2.jpg",
+		"img/EnjoyCity/EnjoyCityList3.jpg"
+		
+	],
+	"img_logo": [
+		"img/flashSalel/wanjia.png",
+		"img/flashSalel/wanjia.png",
+		"img/flashSalel/wanjia.png",
+		"img/flashSalel/wanjia.png"
+	],
+		"tag_logo": [
+		"img/EnjoyCity/EnjoyCity.png",
+		"img/EnjoyCity/EnjoyCity.png",
+		"img/EnjoyCity/EnjoyCity.png",
+		"img/EnjoyCity/EnjoyCity.png"
+	],
+	
+	
+	"title": [
+		"万家精选",
+		"万家精选",
+		"万家精选",
+		"万家精选"
+		
+	],
+	"category": [
+		"【全国配送】苏泊尔 养生锅TB60A1",
+		"【全国配送】乐心 S1 电子称 体重秤 智能电子称 WiFi数据传输 微信互联（心悦紫）",
+		"【全国配送】小猪佩奇儿童毛绒书包 佩奇背包",
+		"【全国配送】片仔癀珍珠霜3瓶组合装"
+	],
+	"intro": [
+		"苏泊尔养生锅，品质保证",
+		"电子秤 体重秤 智能电子称 WiFi数据传输 微信互联",
+		"【全国包邮】男女通用 幼儿园可爱双肩背包 佩奇背包",
+		"舒缓干燥，嫩白补水，祛痘印，保湿面霜【全国配送，单件包邮】"
+	],
+	"price": [
+		"189.00",
+		"99.00",
+		"59.00",
+		"59.00"
+	],
+	"priceDel": [
+		"",
+		"",
+		"79.00",
+		""
+	]
+}

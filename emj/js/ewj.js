@@ -18,25 +18,6 @@
 			$('.flashSaleG').append(data)
 
 		});
-
-		//引入尖货推荐界面
-		$.ajax({
-			url: "html/sellGoods.html",
-			async: false,
-		}).done(function(data) {
-			$('.sellGoodsG').append(data)
-
-		});
-		
-			//引入上新品界面
-		$.ajax({
-			url: "html/newArrival.html",
-			async: false,
-		}).done(function(data) {
-			$('.newArrivalG').append(data)
-
-		});
-
 		//引入尾部文件
 		$.ajax({
 			url: "html/foot.html",
@@ -78,8 +59,20 @@
 
 			$(this).hide();
 		})
+		
+/*************************************用户名显示******************************/	
+			if(cookieMy.getCookie('zhanghao1')) {
+				
+				$('.navL_o').find('em').html(cookieMy.getCookie('zhanghao1'))	
+				
+				
+			}else{
+				
+					$('.navL_o').find('em').html('您好')	
+			}
 
 	})
+	
 
 })();
 /****************************图片轮播效果**************************************/
@@ -146,6 +139,7 @@
 		});
 
 	})
+	
 
 })();
 /****************************flashSale倒计时+json文件引入数据********************/
@@ -229,83 +223,70 @@
 
 })();
 
-/****************************尖货推荐内容部分son文件引入数据********************/
+/****************************滑入的mask效果***********************************/
 (function() {
 
 	$(function() {
+		$(document).on('mouseover', '.newGoods', function() {
 
-		$('.newGoods').hover(function() {
 			$(this).children('.mask').stop(true).fadeIn()
 
-		}, function() {
+		})
+		$(document).on('mouseout', '.newGoods', function() {
 
 			$(this).children('.mask').stop(true).fadeOut()
 
 		})
+	})
 
-		$.ajax({
-			url: "json/sellGoods.json"
-		}).done(function(data) {
+	$(document).on('mouseover', '.arrivalGoods', function() {
 
-			$('.goods_view').children('img').each(function(i) {
-				$(this).attr('src', data.img_src[i])
-				$('.tag').children('img').eq(i).attr('src', data.tag_logo[i])
-				$(this).parents('.newGoods').find('.img_country').children('img').attr('src', data.img_logo[i])
-				$(this).parents('.newGoods').find('.img_title').html(data.title[i])
-				$(this).parents('.newGoods').find('.shop_name').children('a').html(data.category[i])
-				$(this).parents('.newGoods').find('.goods_intro').children('a').html(data.intro[i])
-				$(this).parents('.newGoods').find('.goods_price').children('span').children('i').html(data.price[i])
-				$(this).parents('.newGoods').find('.goods_price').children('del').children('i').html(data.priceDel[i])
-			})
+		$(this).children('.mask').stop(true).fadeIn()
 
-		});
+	})
+	$(document).on('mouseout', '.arrivalGoods', function() {
+
+		$(this).children('.mask').stop(true).fadeOut()
+
+	})
+
+	$(document).on('mouseover', '.crossGoods', function() {
+
+		$(this).children('.mask').stop(true).fadeIn()
+
+	})
+	$(document).on('mouseout', '.crossGoods', function() {
+
+		$(this).children('.mask').stop(true).fadeOut()
 
 	})
 
 })();
-/****************************上新品部分son文件引入数据***************************/
-(function() {
 
-	$(function() {
-
-		$('.arrivalGoods').hover(function() {
-
-			$(this).children('.mask').stop(true).fadeIn()
-
-		}, function() {
-
-			$(this).children('.mask').stop(true).fadeOut()
-
-		})
-		
-		$.ajax({
-			url:"json/newArrival.json",
-		}).done(function(data){
-			
-				$('.arrival_view').children('img').each(function(i){
-					$(this).attr('src', data.img_src[i])
-					$(this).parents('.arrivalGoods').find('.tag').find('img').attr('src',data.tag_logo[i])
-					$('.jj_box').find('img').eq(i).attr('src', data.img_logo[i])
-					$('.jj_box').find('span').eq(i).html(data.title[i])
-					$('.jj_p2').find('a').eq(i).html(data.category[i])
-					$('.jj_p3').find('a').eq(i).html(data.intro[i])
-					$(this).parents('.arrivalGoods').find('.shop_pri').children('span').children('i').html(data.price[i])
-					$(this).parents('.arrivalGoods').find('.shop_pri').children('del').children('i').html(data.priceDel[i])
-					
-				})
-			
-			
-		});
-		
-		
-
-	})
-
-})();
 /****************************加入购物车按钮的效果********************************/
-$(document).on('mouseover','.btn_box',function(){
-	
-	
+$(document).on('mouseover', '.crossMoList li a', function() {
+
+	$(this).stop(true).animate({
+		backgroundColor: '#fff',
+		color: '#252525'
+
+	}, 500)
+
+})
+
+$(document).on('mouseout', '.crossMoList li a', function() {
+
+	$(this).css("background-color", "");
+	$(this).stop(true).animate({
+
+		color: '#fff'
+
+	}, 500)
+
+})
+
+$(document).on('mouseover', '.btn_box', function() {
+
 	$(this).stop(true).animate({
 		backgroundColor: '#e60000'
 
@@ -315,13 +296,11 @@ $(document).on('mouseover','.btn_box',function(){
 		color: '#fff'
 
 	}, 500)
-	
-	
+
 });
 
-$(document).on('mouseout','.btn_box',function(){
-	
-	
+$(document).on('mouseout', '.btn_box', function() {
+
 	$(this).stop(true).animate({
 		backgroundColor: '#fff'
 
@@ -330,57 +309,292 @@ $(document).on('mouseout','.btn_box',function(){
 		color: '#e60000'
 
 	}, 500)
-	
-	
-});
-/****************************滑下出现固定的搜索框********************************/
-(function(){
-	
-	$(function(){
-		
-		$(window).scroll(function(){
-        var scrolltop=$(this).scrollTop();
-  		if(scrolltop>1200){
-  			
-  			$('.header_body').addClass('header_bodyFixed')
-  			$('.logo').hide();
-  			$('.headerCart').hide()
-  			$('.headerSearchHotkey').hide();
-  			$('.headerScrollNav').show();
-			$('#search_form').css({
-				top:"-73px",
-				left:"670px"
-				
-				
-			})
-  			
-  			
-  		}else{
-  			
-  			$('.header_body').removeClass('header_bodyFixed')
-  			$('.logo').show();
-  			$('.headerCart').show()
-  			$('.headerSearchHotkey').show()
-  			$('.headerScrollNav').hide()
-  			$('#search_form').css({
-				top:"0px",
-				left:"0px"
-				
-				
-			})
-  		}
-  			
-  
-  })
-		
-		
-		
-		
-		
-	})
-	
-	
-	
-})()
 
-  
+});
+
+/****************************滑下出现固定的搜索框预加载********************************/
+(function() {
+
+		$(function() {
+			var bstop = true;
+			var bstop1 = true;
+			var bstop2 = true;
+			var bstop3 = true;
+			var bstop4 = true;
+			$(window).scroll(function() {
+				var scrolltop = $(this).scrollTop();
+				var $height = $(window).height(); //可视区
+				var $sellGoodstop = $('.sellGoodsG').offset().top + 200;
+				var $newArrivaltop = $('.newArrivalG').offset().top + 200;
+				var $borderTratop = $('.cross_borderTraG').offset().top + 200;
+				var $EnjoyCitytop = $('.EnjoyCityG').offset().top + 200;
+				var $originDirecttop = $('.originDirectG').offset().top + 200;
+
+					$('.louceng').each(function(i){
+						var $top1 = ($('.louceng').eq(i).offset().top+200)
+						if($top1>scrolltop){
+						$('.loutiNav li').eq(i).addClass('loutiActive').siblings('li').removeClass('loutiActive')
+							return false;
+								
+							}
+						
+					})	
+			
+
+					/***************************请求尖货推荐的结构页面********************************/
+					if($sellGoodstop < scrolltop + $height) {
+						if(bstop) {
+							$.ajax({
+								url: 'html/sellGoods.html',
+								beforeSend: function() { //发送请求前
+									bstop = false;
+									$('.sellGoodsG').find('.loading').show();
+
+								}
+							}).done(function(data) {
+								$('.sellGoodsG').append(data)
+									//请求尖货推荐的json数据	
+								$.ajax({
+									url: "json/sellGoods.json"
+								}).done(function(data) {
+									$('.goods_view').children('img').each(function(i) {
+										$(this).attr('src', data.img_src[i])
+										$('.tag').children('img').eq(i).attr('src', data.tag_logo[i])
+										$(this).parents('.newGoods').find('.img_country').children('img').attr('src', data.img_logo[i])
+										$(this).parents('.newGoods').find('.img_title').html(data.title[i])
+										$(this).parents('.newGoods').find('.shop_name').children('a').html(data.category[i])
+										$(this).parents('.newGoods').find('.goods_intro').children('a').html(data.intro[i])
+										$(this).parents('.newGoods').find('.goods_price').children('span').children('i').html(data.price[i])
+										$(this).parents('.newGoods').find('.goods_price').children('del').children('i').html(data.priceDel[i])
+									})
+
+								});
+
+							});
+
+							$('.sellGoodsG').find('.loading').hide();
+						}
+					}
+					/***************************上新品推荐的结构页面*********************************/
+					if($newArrivaltop < scrolltop + $height) {
+						if(bstop1) {
+							$.ajax({
+								url: 'html/newArrival.html',
+								beforeSend: function() { //发送请求前
+									bstop1 = false;
+									$('.newArrivalG').find('.loading').show();
+
+								}
+							}).done(function(data) {
+								$('.newArrivalG').append(data)
+									//请求上新品推荐的json数据	
+								$.ajax({
+									url: "json/newArrival.json",
+								}).done(function(data) {
+									$('.arrival_view').children('img').each(function(i) {
+										$(this).attr('src', data.img_src[i])
+										$(this).parents('.arrivalGoods').find('.tag').find('img').attr('src', data.tag_logo[i])
+										$('.jj_box').find('img').eq(i).attr('src', data.img_logo[i])
+										$('.jj_box').find('span').eq(i).html(data.title[i])
+										$('.jj_p2').find('a').eq(i).html(data.category[i])
+										$('.jj_p3').find('a').eq(i).html(data.intro[i])
+										$(this).parents('.arrivalGoods').find('.shop_pri').children('span').children('i').html(data.price[i])
+										$(this).parents('.arrivalGoods').find('.shop_pri').children('del').children('i').html(data.priceDel[i])
+
+									})
+
+								});
+
+							});
+
+							$('.newArrivalG').find('.loading').hide();
+						}
+					}
+
+					/***************************跨境精选的结构页面***********************************/
+					if($borderTratop < scrolltop + $height) {
+						if(bstop2) {
+							$.ajax({
+								url: 'html/crossBorder.html',
+								beforeSend: function() { //发送请求前
+									bstop2 = false;
+									$('.cross_borderTraG').find('.loading').show();
+
+								}
+							}).done(function(data) {
+								$('.cross_borderTraG').append(data)
+									//请求上跨境精选的json数据	
+								$.ajax({
+									url: "json/crossBorder.json"
+								}).done(function(data) {
+
+									$('.cross_view').children('img').each(function(i) {
+										$(this).attr('src', data.img_src[i])
+										$(this).parents('.crossGoods').find('.tag').find('img').attr('src', data.tag_logo[i])
+										$(this).parents('.crossGoods').find('.jj_p1').find('img').attr('src', data.img_logo[i])
+										$(this).parents('.crossGoods').find('.jj_box').find('span').html(data.title[i])
+										$(this).parents('.crossGoods').find('.jj_p2').find('a').html(data.category[i])
+										$(this).parents('.crossGoods').find('.jj_p3').find('a').html(data.intro[i])
+										$(this).parents('.crossGoods').find('.shop_pri').children('span').children('i').html(data.price[i])
+										$(this).parents('.crossGoods').find('.shop_pri').children('del').children('i').html(data.priceDel[i])
+
+									})
+
+								});
+
+							});
+
+							$('.cross_borderTraG').find('.loading').hide();
+						}
+					}
+
+					/***************************EnjoyCity结构页面**********************************/
+					if($EnjoyCitytop < scrolltop + $height) {
+						if(bstop3) {
+							$.ajax({
+								url: 'html/EnjoyCity.html',
+								beforeSend: function() { //发送请求前
+									bstop3 = false;
+									$('.EnjoyCityG').find('.loading').show();
+
+								}
+							}).done(function(data) {
+								$('.EnjoyCityG').append(data)
+									//请求EnjoyCity的json数据	
+								$.ajax({
+									url: "json/EnjoyCity.json"
+								}).done(function(data) {
+
+									$('.EnjoyCityG').find('.crossGoods').each(function(i) {
+										$(this).find('.cross_view').children('img').attr('src', data.img_src[i])
+										$(this).find('.tag').children('img').attr('src', data.tag_logo[i])
+										$(this).find('.tag').children('img').attr('src', data.tag_logo[i])
+										$(this).find('.jj_p1').children('img').attr('src', data.img_logo[i])
+										$(this).find('.jj_box').children('span').html(data.title[i])
+										$(this).find('.jj_p2').children('a').html(data.category[i])
+										$(this).find('.jj_p3').children('a').html(data.intro[i])
+										$(this).find('.shop_pri').children('span').children('i').html(data.price[i])
+										$(this).find('.shop_pri').children('del').children('i').html(data.priceDel[i])
+
+									})
+
+								});
+
+							});
+
+							$('.EnjoyCityG').find('.loading').hide();
+						}
+					}
+					/***************************产地直采结构页面************************************/
+					if($originDirecttop < scrolltop + $height) {
+						if(bstop4) {
+							$.ajax({
+								url: 'html/originDirect.html',
+								beforeSend: function() { //发送请求前
+									bstop4 = false;
+									$('.originDirectG').find('.loading').show();
+
+								}
+							}).done(function(data) {
+								$('.originDirectG').append(data)
+									//请求产地直采的json数据	
+								$.ajax({
+									url: "json/originDirect.json"
+								}).done(function(data) {
+
+									$('.originDirectG').find('.crossGoods').each(function(i) {
+										$(this).find('.cross_view').children('img').attr('src', data.img_src[i])
+										$(this).find('.tag').children('img').attr('src', data.tag_logo[i])
+										$(this).find('.tag').children('img').attr('src', data.tag_logo[i])
+										$(this).find('.jj_p1').children('img').attr('src', data.img_logo[i])
+										$(this).find('.jj_box').children('span').html(data.title[i])
+										$(this).find('.jj_p2').children('a').html(data.category[i])
+										$(this).find('.jj_p3').children('a').html(data.intro[i])
+										$(this).find('.shop_pri').children('span').children('i').html(data.price[i])
+										$(this).find('.shop_pri').children('del').children('i').html(data.priceDel[i])
+
+									})
+
+								});
+
+							});
+
+							$('.originDirectG').find('.loading').hide();
+						}
+					}
+					/***************************楼梯fixed***************************************/
+					if(scrolltop > 800) {
+
+						$('.loutiNav').fadeIn()
+						$('.cartLayer').fadeIn()
+
+					} else {
+
+						$('.loutiNav').fadeOut();
+						$('.cartLayer').fadeOut();
+					}
+
+					/***************************搜索框fixed************************************/
+					if(scrolltop > 1000) {
+
+						$('.header_body').addClass('header_bodyFixed')
+						$('.logo').hide();
+						$('.headerCart').hide()
+						$('.headerSearchHotkey').hide();
+						$('.headerScrollNav').show();
+						$('#search_form').css({
+							top: "-73px",
+							left: "670px"
+
+						})
+
+					} else {
+
+						$('.header_body').removeClass('header_bodyFixed')
+						$('.logo').show();
+						$('.headerCart').show()
+						$('.headerSearchHotkey').show()
+						$('.headerScrollNav').hide()
+						$('#search_form').css({
+							top: "0px",
+							left: "0px"
+
+						})
+					}
+
+				})
+
+			})
+
+		})();
+/**********************************楼层效果页面********************************/
+		(function() {
+
+			$(function() {
+
+				$('.loutiNav ul li').on('click', function() {
+					$(this).siblings('li').find('.topxs').show().siblings('.topyc').hide()
+					$(this).find('.topyc').show().css('display', 'inline-block').siblings('.topxs').hide()
+					$(this).addClass('loutiActive').siblings('li').removeClass('loutiActive')
+
+					var $loucengtop = $('.louceng').eq($(this).index()).offset().top;
+
+					$('html,body').stop(true).animate({ //兼容问题
+						scrollTop: $loucengtop
+					}, 600)
+					
+				})
+				
+				
+				
+				$('.entry03').click(function(){
+						$('html,body').stop(true).animate({
+						scrollTop: 0
+
+					}, 400)
+						
+					})
+
+			})
+
+		})();
