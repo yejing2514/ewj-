@@ -9,6 +9,12 @@ a:hover{
 	
 	
 }
+.content{
+	width: 1192px;
+	background:#ededed;
+	margin: 0 auto;
+	
+}
 .productCont{
 	
 	width: 1192px;
@@ -19,11 +25,10 @@ a:hover{
 }
 .crumb{
 	width: 1192px;
-	height: 50px;
-	padding: 15px 0;
+	padding: 5px 0;
 	font-size: 14px;
 	color: #333;
-	background: yellowgreen;
+	background: #EDEDED
 		
 }
 .crumb a,.crumb span{
@@ -36,14 +41,14 @@ a:hover{
 	position: relative;
 	float: left;
 	height: 578px;
-	background: chocolate;
+	background: #EDEDED
 }
 .gallery{
 	
 	float: left;
 	width: 420px;
 	height: 578px;
-	background: lightskyblue;
+	background: #EDEDED
 	
 }
 .midView{
@@ -65,6 +70,7 @@ a:hover{
 	width: 209px;
 	height: 209px;
 	opacity: 0.15;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=15);
 	background: #000;
 	border: 1px solid #fff;
 	cursor: crosshair;
@@ -84,12 +90,27 @@ a:hover{
     line-height:85px;
     overflow: hidden;
     position: relative;
+    right: 10px;
     float: left;
     cursor: pointer;
     color:#9a9a9a;
     font-size:32px;
     width:20px;
     opacity: 0.5;
+}
+.smallImgBtn{
+	
+	 height: 100%;
+    line-height:85px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    cursor: pointer;
+    color:#9a9a9a;
+    font-size:32px;
+    width:20px;
+    opacity: 0.5;
+	
 }
 .imageMenu{
 	
@@ -147,10 +168,658 @@ a:hover{
     height: 418px;
     overflow: hidden;
     display: none;
+    z-index: 500;
 	
 }
 .bigView img {
     position: absolute;
     width: 840px;
     height: 840px;
+}
+.detail_right{
+	
+	
+	width: 733px;
+	height: 394px;
+	float: right;
+	margin-bottom: 20px;
+	background: #EDEDED
+	/*overflow: hidden;*/
+}
+.detailName{
+	color: #333;
+	font-size: 22px;
+	width: 100%;
+	line-height: 26px;
+	float: left;
+	margin: 5px 0 px 0;	
+	
+
+}
+.detailIntroduce{
+	
+	color: #555;
+	float: left;
+	font-size: 14px;
+	line-height: 20px;
+	width: 100%;
+	margin-top: 30px;
+}
+.detailMoney{
+	 width:100%;
+    float:left;
+    border-bottom:1px solid #dedede;
+    font-size:14px;
+    color:#333;
+    line-height:60px;
+    margin-top: 2px;
+	
+	
+}
+.textPrimary{
+	
+	 display: inline-block;
+    font-size: 26px;
+    color: #e14041;
+    position: relative;
+    margin-left: 30px;
+    top: 7px;
+}
+.detailMoney strong{
+	color: #E14041;
+	font-size: 38px;
+	 position: relative;
+	  top: 7px;
+}
+.detailMoney del{
+	
+	color: #a2a2a2;
+	margin-left: 30px;
+	
+}
+.detail_quantity{
+	line-height: 30px;
+	position: relative;
+	float: left;
+	width: 100%;
+	font-size: 14px;
+	color: #333;
+	margin-top: 20px;
+	
+	
+	
+}
+.detail_title1{
+	
+	width: 50px;
+	float: left;
+	
+}
+.detail_less{
+	width: 12px;
+	height: 12px;
+	text-align: center;
+	background: url(../img/Sprite/less.png) no-repeat center;
+	float: left;
+	margin-top: 8px;
+}
+.quantity_txt{
+	 line-height:28px;
+    height:28px;
+    border:1px solid #d1d1d1;
+    float:left;
+    width:50px;
+    text-align:center;
+    margin:0 10px;
+    padding: 0;
+	
+}
+.detail_add{
+	
+	width: 12px;
+	height: 30px;
+	text-align: center;
+	background: url(../img/Sprite/add.png) no-repeat center;
+	float: left;
+	
+}
+.kuncun{
+	font-size: 12px;
+	color: #999999;
+	margin-left: 15px;
+	
+}
+.detail_region{
+	line-height: 30px;
+	margin-top: 25px;
+	float: left;
+	width: 100%;
+	font-size: 14px;
+	color: #333;
+		
+}
+.region_list{
+	
+	float: left;
+	position: relative;
+	z-index: 40;
+	background: #fff;
+	border: 1px solid #D1D1D1;
+	
+}
+.region_title{
+	float: left;
+	padding:  0 0 0 15px;
+	cursor: pointer;
+	position: relative;
+	z-index: 5;
+	background: #FFFFFF;
+	
+}
+.cnt{
+
+	float: left;
+	margin-right: 6px;
+}
+.region_ico{
+	border-left: 1px solid #ddd;
+    color: #999;
+    float: right;
+    font-size: 9px;
+    height: 20px;
+    line-height: 15px;
+    margin: 4px 0 0 20px;
+    padding:4px 9px 2px 6px;
+	
+	
+	
+}
+.region_pop{
+	display: none;
+	position:absolute;
+    left: -35px;
+    top:29px;
+    width:450px;
+    padding:10px 0;
+    border:1px solid #d1d1d1;
+    background-color:#fff;
+    box-shadow: 0 
+	
+}
+.region_pop_nav{
+	float: left;
+	width: 435px;
+	position: relative;
+	padding:  0 0 0 15px;
+	
+	
+}
+
+.region_pop_nav li{
+	
+	color: #72b3f6;
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	margin-right: 5px;
+	cursor: pointer;
+	
+}
+.tt{
+	height: 25px;
+	line-height: 25px;
+	 background-color:#fff;
+    position:relative;
+    z-index:2;
+    border: #72b3f6 1px solid;
+    border-bottom: #fff 1px solid;
+    float: left;
+}
+.ico{
+	background: url(../img/Sprite/xiaSpr.png) no-repeat 0 -10px;
+	float: right;
+	font-size: 5px;
+	margin:  8px 0 0 5px;
+	color: #999;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	
+}
+.line{
+	 position:absolute;
+    top:25px;
+    height:1px;
+    width:100%;
+    left:0;
+    background-color:#72b3f6;
+	
+}
+.f1{
+	margin-left: 2px;
+	
+}
+.region_pop_nav_list{
+	float: left;
+	margin: 10px;
+	padding: 0 0 0 30px;
+	overflow: hidden;
+	
+}
+.stock_province_item{
+	float: left;
+	
+	
+}
+.stock_province_item a{
+	 float:left;
+    width: 95px;
+    white-space:nowrap;
+    color:#777;
+    cursor:pointer;
+	 
+	
+}
+.hasProduct{
+	display: inline;
+	margin-left: 30px;
+	color: #333;
+	
+}
+.buyOperate{
+	
+	 float:left;
+    width:100%;
+    font-size:14px;
+    color:#333;
+    margin-top:20px;
+	
+}
+.btnAddToCart:hover{
+	
+	color: #fff;
+	
+}
+.btnAddToCart{
+	
+	float: left;
+    width: 190px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    background: #e14041;
+    border-top: 1px #f0a0a0 solid;
+    border-bottom: 1px solid #a42f30;
+	
+}
+.btnAddFavorite{
+		width: 87px;
+		height: 46px;
+		display: inline-block;
+	 line-height:42px;
+    border:1px solid #d1d1d1;
+    margin-left:10px;
+    text-align: center;
+    background: #FBFBFB;
+}
+.dt_linstips{
+	
+	float: left;
+	width: 100%;
+	font-size: 14px;
+	color: #333;
+	line-height: 28px;
+	margin-top: 15px;
+}
+.share{
+	 font-size:14px;
+    color:#333;
+    width:100%;
+    float:left;
+    margin-bottom:15px;
+	
+}
+.share a{
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+	background: url(../img/Sprite/icons.png) no-repeat;
+	position: relative;
+	top: 4px;
+	margin-left: 10px;
+}
+.detail_left{
+	width: 250px;
+	float: left;
+	
+}
+.navList{
+	 width: 100%;
+    float: left;
+    position: relative;
+    box-shadow: 2px 2px 2px #e2e2e2;
+    margin-bottom: 15px;
+	
+	
+}
+.navListTitle{
+	
+	 width:100%;
+    height:45px;
+    line-height:45px;
+    color:#222;
+    font-size:16px;
+    float:left;
+    text-indent:20px;
+    background-color:#fff;
+    cursor:pointer;
+	
+}
+.navlistL{
+	width: 100%;
+	float: left;
+	padding-bottom: 10px;
+	border-top: 3px solid #EDEDED;
+	background: #FFFFFF;
+	
+	
+}
+.navlistL a{
+	
+	 color:#333;
+    font-size:14px;
+    width:94px;
+    padding:10px 0 10px 35px;
+    margin-left:-5px;
+    float:left;
+    line-height:20px;
+    cursor:pointer;
+	
+}
+.navlistL a:hover{
+	background: #E60000;
+	color: #fff;
+	
+}
+.detail_Cright{
+	
+	width: 920px;
+	float: right;
+	
+}
+.detail_cont{
+width: 100%;
+float: left;
+margin-bottom: 15px;
+	
+	
+}
+.detail_rightNav{
+	width:100%;
+    border-bottom:1px solid #e14041;
+    background-color:#fff;
+   	height: 40px;
+	
+}
+.detail_rightNav a{
+	 line-height:40px;
+    font-size:14px;
+    color:#333;
+    float:left;
+    display: inline-block;
+    width: 96px;
+    height: 40px;
+    text-align: center;
+	
+}
+
+.detail_rightNav .detailsActive{
+	background: #E60000;
+	color: #FFFFFF;
+	
+	
+}
+.center_html{
+	
+	text-align: left;
+    width: 100%;
+    float: left;
+    background-color:#fff;
+    line-height: 0;
+    
+}
+.center_html p img{
+	
+	margin: 0 auto;
+	margin-top: 10px;
+	
+}
+.appraisal{
+	
+	float: left;
+	width: 100%;
+	background: #fff;
+	
+}
+.mod_comment{
+	font-size: 14px;
+	color: #555;
+	
+	
+}
+.comment_chart{
+	
+	background: #fffefe;
+	height: 120px;
+	margin:  0 0 2px;
+}
+.rate{
+	 float: left;
+    width: 155px;
+    text-align: center;
+    color: #000;
+    height: 100px;
+    padding: 20px 0 0 0;
+    background: url(../img/itemDetails/impression.png) no-repeat right top;
+	
+}
+.rate strong{
+	
+	color: #e60021;
+	font-size: 40px;
+	
+}
+.fz18{
+	color: #E60000;
+	font-size: 18px;
+}
+.rate span{
+	
+	font-size: 14px;
+	color: #222222;
+}
+.percent{
+	
+	float: left;
+	width: 765px;
+	
+}
+.percentItem{
+	float: left;
+	width: 220px;
+	margin: 24px 0 0 30px;
+	
+}
+.circle{
+	
+	width: 70px;
+	height: 70px;
+	float: left;
+	border-radius: 50%;
+	background: #fff;
+	border: 4px solid #EDEDED;
+	
+}
+.circle p{
+	
+	line-height: 70px;
+	text-align: center;
+	color: #ff6f8e;
+	font-size: 18px;
+}
+.txt_floatl{
+	
+	float: left;
+	margin-left: 8px;
+	color: #000;
+	line-height: 70px;
+}
+.comment_list{
+	background: #fff;
+	padding: 0 20px;
+	
+	
+}
+.comment_type{
+	padding: 12px 0;
+	height: 16px;
+	line-height: 16px;
+	border-bottom: 1px solid #EDEDED;
+	
+}
+.evaluation{
+	float: left;
+	display: inline;
+	margin: 0 0 0 -15px;	
+}
+.evaluation li{
+	
+	float: left;
+	padding: 0 15px;
+	border-right: 1px solid #EDEDED;
+	color: #555;
+	cursor: pointer;
+	font-size: 16px;
+	
+}
+.modelTable td {
+	text-align: center;
+	border: 1px solid #EDEDED;
+	
+}
+.modelTable {
+	border-collapse: collapse;
+}
+.comment_pin{
+	width: 100%;
+	height: 130px;
+	background: #FFFFFF;
+	text-align: center;
+	font-size: 18px;
+	line-height: 40px;	
+}
+.modelTableWrap{
+	
+	background: #FFFEFE;
+}
+
+.modelTable{
+	
+	border: 1px solid #EDEDED;
+	line-height: 38px;
+	font-size: 14px;
+	margin-left: 20px;
+}
+.modelTable p{
+	
+	margin-left: 25px;
+}
+
+
+.stock_province_item a:hover{
+	
+	color: #72b3f6;
+}
+.cartLayer{
+	width: 40px;
+	height: 203px;
+	z-index: 9999;
+	position: fixed;
+	top: 312px;
+	right: 8px;
+	display: none;	
+}
+.cartLayerUl .count{
+	width: 22px;
+	height: 22px;
+	text-align: center;
+	line-height: 22px;
+	font-size: 12px;
+	color: #222;
+	background: #fff;
+	border: 1px solid #E60000;
+	border-radius: 28px;
+	position: absolute;
+	right: -10px;
+	top: -16px;
+	
+	
+	
+}
+.count:hover{
+	width: 24px;
+	height: 24px;
+	
+}
+.entry01{
+	width: 40px;
+	height: 40px;
+	background: url(../img/Sprite/cebianlan.png) no-repeat -50px 0;
+	
+}
+.entry01 a{
+	width: 100%;
+	height: 100%;
+	display: block;
+	
+}
+.entry02{
+	width: 40px;
+	height: 40px;
+	background: url(../img/Sprite/cebianlan.png) no-repeat 0px -50px;
+	
+}
+.entry02 a{
+	width: 100%;
+	height: 100%;
+	display: block;
+	
+}
+
+.entry03{
+	width: 40px;
+	height: 40px;
+	background: url(../img/Sprite/cebianlan.png) no-repeat 0px -100px;
+	
+}
+.entry03 a{
+	width: 100%;
+	height: 100%;
+	display: block;
+	
+}
+.entry02:hover{
+	
+	background: url(../img/Sprite/cebianlan.png) no-repeat -50px -50px;
+	
+}
+.entry03:hover{
+	
+	background: url(../img/Sprite/cebianlan.png) no-repeat -50px -100px;
+	
+}
+.tabItem{
+	display: none;
 }

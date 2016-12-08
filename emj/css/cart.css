@@ -1,0 +1,723 @@
+a:hover{
+
+
+color: #E60000;	
+}
+
+.cartheaderG{
+	background: #F8F8F8;
+	 box-shadow: 0 0 10px rgba(9, 2, 4, .12);
+    position: relative;
+	
+}
+
+.cartheader{
+	width: 1192px;
+	height: 124px;
+	background: #F8F8F8;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+	
+}
+.siteNav{
+	display: inline-block;
+	width: 100%;
+	padding-top: 8px;
+	position: relative;
+	z-index: 20;
+	
+	
+}
+.siteNavCityChoose{
+	
+	 color: #666;
+    float: left;
+    font-size: 14px;
+    margin: -11px -10px -10px -10px;
+    padding: 10px;
+    position: relative;
+    float: left;
+ 
+}
+.siteNavLoginBox{
+	  float: left;
+    font-size: 12px;
+    color: #666;
+    margin-left: 25px;
+    overflow: hidden;
+	
+}
+.siteNavLogin{
+	float: left;
+}
+.siteNavLogin i{
+	
+	color: #E60000;
+}
+.reglon{
+	
+	float: left;
+}
+.reglon a{
+	
+	padding: 0 20px;
+	border-right: 1px solid #535353;
+	
+	
+}
+.siteNavEntry{
+	
+	 float: right;
+    font-size: 12px;
+    overflow: hidden;
+    margin-right: -12px;
+}
+.siteNavEntry a{
+	
+	border-left: 1px solid #666;
+    color: #666;
+    display: inline-block;
+    line-height: 13px;
+    margin: 2px 20px 0 -1px;
+    padding-left: 20px;
+}
+.headerBody{
+	
+	display: inline-block;
+    left: 0;
+    padding-top: 3px;
+    width: 100%;
+    height: 99px;
+    position: relative;
+}
+.headerLogo{
+	background: url(../img/Sprite/index.png) no-repeat 0 0;
+	width: 341px;
+	height: 71px;
+	float: left;
+	margin-top: 5px;
+	
+}
+.headerShoppingStep{
+	
+	
+	 position: relative;
+    float: right;
+    margin-top: 28px;
+}
+.headerShoppingStep li{
+	
+	float: left;
+	white-space: nowrap;
+    position: relative;
+	
+}
+.line1{
+	    background-color: #79b235;
+	        position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+	
+}
+.radius{
+	
+	 position: absolute;
+    width: 28px;
+    height: 28px;
+    top: -14px;
+    left: 50%;
+    margin-left: -14px;
+    background: url(../img/Sprite/circle.png) no-repeat 0 0px;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    line-height: 28px;
+}
+.hshop{
+	
+	margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+    min-width: 175px;
+    float: left;
+    text-align: center;
+    color: #79b235;
+}
+.backedededG{
+	
+	background-color: #ededed;
+    display: inline-block;
+    width: 100%;
+	
+}
+.backededed{
+	
+	width: 1190px;
+    margin: 0 auto;
+}
+.mani_cat_but{
+	
+	width: 100%;
+    float: left;
+    background-color: #fff;
+    line-height: 45px;
+    height: 45px;
+    margin: 38px 0 20px 0;
+}
+.McbTitle{
+	
+	float: left;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #333;
+	
+}
+.but{
+	
+	float: right;
+    margin-right: 20px;
+    font-size: 14px;
+    color: #aaa;
+    cursor: pointer;
+}
+.datles_table{
+	
+	 width: 100%;
+    float: left;
+    margin: 15px 0;
+}
+.delivery{
+	width: 100%;
+    float: left;
+    background-color: #fff;
+    line-height: 45px;
+    height: 45px;
+    font-size: 14px;
+	
+}
+.totalAmount{
+	
+	    float: left;
+    margin-left: 25px;
+    font-size: 16px;
+    color: #fb000a;
+    font-weight: bold;
+}
+.region{
+	width: 350px;
+	height: 41px;
+	 line-height: 45px;
+    float: right;
+    margin-top: 5px;
+}
+
+.region .McbTitle{
+	
+	float: left;
+    padding: 0 0 0 15px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+
+	
+}
+.region_list{
+	margin-left: 10px;
+	float: left;
+	position: relative;
+	z-index: 40;
+	background: #fff;
+	border: 1px solid #D1D1D1;
+	margin-top: 5px;
+	
+}
+.region_title{
+	float: left;
+	padding:  0 0 0 15px;
+	cursor: pointer;
+	position: relative;
+	z-index: 5;
+	background: #FFFFFF;
+	height: 34px;
+	
+}
+.cnt{
+	float: left;
+	margin-right: 6px;
+	line-height: 34px;
+}
+.region_ico{
+	border-left: 1px solid #ddd;
+    color: #999;
+    float: right;
+    font-size: 9px;
+    line-height: 15px;
+    margin: -1px 0 0 20px;
+    padding:11px 9px 2px 6px;
+	
+	
+	
+}
+.region_pop{
+	display: none;
+	position:absolute;
+    left: -189px;
+    top:33px;
+    width:450px;
+    padding:10px 0;
+    border:1px solid #d1d1d1;
+    background-color:#fff;
+    box-shadow: 0;
+    display: block; 
+	
+}
+.region_pop_nav{
+	float: left;
+	width: 435px;
+	position: relative;
+	padding:  0 0 0 15px;
+	
+	
+}
+
+.region_pop_nav li{
+	
+	color: #72b3f6;
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	margin-right: 5px;
+	cursor: pointer;
+	
+}
+.tt{
+	height: 25px;
+	line-height: 25px;
+	 background-color:#fff;
+    position:relative;
+    z-index:2;
+    border: #72b3f6 1px solid;
+    border-bottom: #fff 1px solid;
+    float: left;
+}
+.ico{
+	background: url(../img/Sprite/xiaSpr.png) no-repeat 0 -10px;
+	float: right;
+	font-size: 5px;
+	margin:  8px 0 0 5px;
+	color: #999;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	
+}
+.line{
+	 position:absolute;
+    top:25px;
+    height:1px;
+    width:100%;
+    left:0;
+    background-color:#72b3f6;
+	
+}
+.f1{
+	margin-left: 2px;
+	
+}
+.region_pop_nav_list{
+	float: left;
+	margin: 10px;
+	padding: 0 0 0 30px;
+	overflow: hidden;
+	
+}
+.stock_province_item{
+	float: left;
+	
+	
+}
+.stock_province_item a{
+	 float:left;
+    width: 95px;
+    white-space:nowrap;
+    color:#777;
+    cursor:pointer;
+	 
+	
+}
+.th{
+line-height: 45px;
+ background-color: #fff9f9;
+ width: 100%;
+ float: left;
+  border-bottom: 1px solid #ededed;
+	
+}
+.ld1{
+	text-indent: 0;
+	width: 130px;
+    margin-left: 25px;
+     float: left;
+    color: #333;
+    font-size: 15px;
+}
+input{
+width: 15px;
+height: 15px;
+
+}
+.ld2,.ld3,.ld4,.ld5,.ld6,.ld7{
+	
+	 float: left;
+    color: #333;
+    font-size: 14px;	
+}
+.ld2{
+	
+	    width: 249px;
+    padding: 0 0 0 16px;
+    text-align: center;
+    
+	
+}
+
+.ld3{
+    width: 185px;
+    text-align: center;
+    margin-left: 10px;
+   
+	
+}
+.ld4{
+	
+	    width: 113px;
+    text-align: center;
+   
+	
+}
+.ld5{
+	width: 138px;
+    margin-left: 17px;
+    text-align: center;
+	
+}
+.ld6{
+	    width: 160px;
+    text-align: center;
+	
+}
+.ld7{
+	padding: 0 0 0 7px;
+	    width: 140px;
+	
+}
+.ll{
+	 width: 100%;
+    float: left;
+    background-color: #fff;
+		
+}
+.merchantHeader{
+	background-color: #ffffff;
+    border-bottom: 1px solid #333333;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 45px;
+    padding: 0 0 0 25px;
+	
+}
+.merchantName{
+	
+	    font-size: 14px;
+    color: #333333;
+        display: inline-block;
+    width: 640px;
+}
+.payPrice{
+	
+	margin-left: 200px;
+    font-weight: normal;
+    text-align: center;
+    width: 176px;
+    display: inline-block;
+        font-size: 14px;
+    line-height: 45px;
+    text-align: center;
+}
+.CartListLi{
+	    background-color: #fff9f9;
+	    margin-bottom: 0;
+    border-bottom: 1px solid #e4e4e4;
+        float: left;
+    width: 100%;
+    padding: 10px 0;
+    line-height: 90px;
+	
+}
+.Cart_view{
+	float: left;
+    margin-left: 24px;
+    width: 90px;
+    height: 90px;
+}
+
+.iputDiv{
+	width: 15px;
+	height: 15px;
+	float: left;
+	
+	
+}
+.CartListLi .ld2{
+	
+	    margin-left: 9px;
+	        width: 256px;
+}
+.ld2 a{
+	
+	display: inline-block;
+    vertical-align: middle;
+    line-height: 19px;
+    width: 245px;
+    word-break: break-all;
+    text-align: left;
+	
+}
+.CartListLi .ld4{
+	margin-left: -19px;
+	
+}
+.midde{
+	display: inline-block;
+    vertical-align: middle;
+    line-height: 19px;
+    text-align: center;
+	
+}
+.detail_less{
+	width: 12px;
+	height: 12px;
+	text-align: center;
+	background: url(../img/Sprite/less.png) no-repeat center;
+	float: left;
+	margin-top: 8px;
+}
+.quantity_txt{
+	 line-height:28px;
+    height:28px;
+    border:1px solid #d1d1d1;
+    float:left;
+    width:50px;
+    text-align:center;
+    margin:0 10px;
+    padding: 0;
+	
+}
+.detail_add{
+	
+	width: 12px;
+	height: 30px;
+	text-align: center;
+	background: url(../img/Sprite/add.png) no-repeat center;
+	float: left;
+	
+}
+.canDelivery{
+	
+	    font-size: 12px;
+    color: #999999;
+    display: inline-block;
+}
+.ld6 em,.ld6 span{
+	
+	font-size: 18px;
+	
+}
+.jiesuan{
+	line-height: 30px;
+	    background-color: #fff;
+    float: left;
+    height: 74px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.float_l{
+		margin-top: 5px;
+		font-size: 14px;
+	    padding-left: 25px;
+	    float: left;
+}
+.f14{
+	
+		display: inline-block;
+		margin: 0px 36px 0 8px;
+	   font-size: 14px;
+	   
+	   
+}
+.bd{
+	
+	border-right: 1px solid #b6b6b6;
+    margin-right: 20px;
+    padding-right: 18px;
+    font-size: 14px;
+}
+.bd b{
+	
+	    font-size: 18px;
+	        color: #fb000a;
+}
+.overNote{
+	
+	    margin-left: 28px;
+    display: inline-block;
+    position: relative;
+}
+.float_r{
+	
+	float: right;
+	
+}
+.quantity{
+	
+	display: inline-block;
+    margin: 10px 10px 0 40px;
+    font-size: 14px;
+    text-align: right;
+}
+.heji{
+	
+	    color: #fb000a;
+	        font-size: 18px;
+}
+.pay{
+	
+	background-color: #e14041;
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    margin-left: 0px;
+    padding: 0 42px;
+    cursor: pointer;
+    height: 74px;
+    line-height: 74px;
+}
+.pay:hover{
+	
+	color: #fff
+}
+.lrBottomG{
+	
+	background: #EDEDED;
+}
+.lrBottom{
+	
+	width: 1192px;
+	height: 132px;
+	margin: 0 auto;
+	
+}
+.lrBottomList{
+	
+	line-height: 132px;
+	text-align: center;
+	font-size: 16px;
+	
+}
+.lrBottomList{
+	
+	color: #848484;
+}
+
+.lrBottomList a{
+	
+	padding: 0 14px;
+	border-right: 1px solid #ccc;
+}
+.panelHd{
+	height: 45px;
+	line-height: 45px;
+	padding: 0 30px;
+	border-bottom: 2px solid #EDEDED;
+	
+	
+}
+.panelHd span{
+	font-size: 14px;
+	float: left;
+	
+}
+.panelHd a{
+	font-size: 14px;
+	color: #E60000;
+	float: right;
+	text-decoration: underline;	
+}
+.cartEmptyTips{
+	overflow: hidden;
+	padding: 94px 0 65px 330px;
+    margin: 0 auto;
+    display: none;
+	
+}
+.cartEmptyImg{
+
+	float: left;
+	width: 66px;
+	height: 60px;
+	
+}
+.cartEmptyTip{
+	
+	float: left;
+	margin-left: 35px;
+	 margin-top: 5px;
+}
+.cartEmptydt{
+	
+	    color: #e14041;
+	     font-size: 18px;
+}
+.cartEmptyTip dd{
+	
+	    margin-top: 5px;
+	    font-size: 14px;
+	        color: #999;
+}
+.cartEmptyTip dd a{
+	
+	    color: #1e589c;
+	    text-decoration: underline;
+} 
+.btnGroup{
+		width: 390px;
+		height: 48px;
+	    margin-top: 25px;
+}
+.btnPrimary{
+	position: relative;
+	color: #fff;
+	top: 25px;
+	left: 30px;
+	height: 35px;
+    line-height: 35px;
+    padding: 8px 30px;
+    font-size: 16px;
+    background: #e14041;
+    border-right: none;
+    border-left: none;
+    border-top: 1px solid #f0a0a0;
+    border-bottom: 1px solid #c21f1f;
+    margin-left: 20px;
+}
+.btnPrimary:hover{
+	
+	color: #fff;
+    background: #ff5758;
+    border-top: 1px solid #f0a0a0;
+    border-bottom: 1px solid #c21f1f;
+}

@@ -142,45 +142,77 @@
 		}
 
 	})
-	
-	
+		/*用户密码保存*/
+		if(cookieMy.getCookie('zhanghao1') && cookieMy.getCookie('mima1')) {		
+			
+			
+			$('.username').val(cookieMy.getCookie('zhanghao1'))
+			$('.userPassword').val(cookieMy.getCookie('mima1'))
+			
+		}
+		
+		if(cookieMy.getCookie('check')=='true'){
+				
+				$('.operatePw').find('input').prop('checked',true)	
+				
+			}else{
+				$('.operatePw').find('input').prop('checked',false)
+					cookieMy.addCookie('check',false)
+					$('.username').val('')
+					$('.userPassword').val('')
+				
+			}
+		
+		$('.operatePw').find('input').click(function(){
+				
+				if($(this).prop('checked')==true){
+					cookieMy.addCookie('check',true)	
+					
+				}else{
+					cookieMy.addCookie('check',false)
+					
+				}
+			
+			
+		})
+		
+		
+		
 
 	/*提交cookie验证*/
 	$('.RegSignInBtn').on('click', function() {
 		var mimaValue = $('.regpassword').val();
 		var md5mima = hex_md5(mimaValue)
 		var duozhang = $('.regName').val();
-		var arr=[]
+		var arr = []
 		if($('.form_group').find('.tips').css('display') == "none") {
-			if($('.form_group').find('input').val().length==0){
-				
-			alert('不能为空请检查输入')
-			return false;
-				
-			}else{
-				
-				if(cookieMy.getCookie('usermore') == undefined) {
-				arr.push(duozhang, md5mima);
-				cookieMy.addCookie('usermore', arr.toString(),7);
-				window.location='login.html'
+			if($('.form_group').find('input').val().length == 0) {
+
+				alert('不能为空请检查输入')
+				return false;
 
 			} else {
-				arr = cookieMy.getCookie("usermore").split(',');
-				if(cookieMy.arrsearch(duozhang, arr)) {
 
-					alert('账号已存在')
-
-				} else {
-					window.location='login.html'
+				if(cookieMy.getCookie('usermore') == undefined) {
 					arr.push(duozhang, md5mima);
 					cookieMy.addCookie('usermore', arr.toString(), 7);
-					
+					window.location = 'login.html'
+
+				} else {
+					arr = cookieMy.getCookie("usermore").split(',');
+					if(cookieMy.arrsearch(duozhang, arr)) {
+
+						alert('账号已存在')
+
+					} else {
+						window.location = 'login.html'
+						arr.push(duozhang, md5mima);
+						cookieMy.addCookie('usermore', arr.toString(), 7);
+
+					}
 
 				}
-
 			}
-			}
-			
 
 		} else {
 			alert('信息未正确填写请重新检查填写')
@@ -188,96 +220,100 @@
 		}
 
 	})
-	
+
 	/*登录验证*/
-	$('.SignInBtn').click(function(){
-		var loginMimavalue =$('.userPassword').val()
+	$('.SignInBtn').click(function() {
+		var loginMimavalue = $('.userPassword').val()
 		var loginMimamd5 = hex_md5(loginMimavalue)
 		var loginZhang = $('.username').val()
-			
 
-			
-	
-				if($('.form_group').find('input').val().length==0){
-					
-					alert('请输入账号密码')
-					
-				}else{
-					
-					if(cookieMy.getCookie('usermore') == undefined) {
-						alert('没有数据请先注册')
-					
+		if($('.form_group').find('input').val().length == 0) {
 
-				} else {
-					var shuzu = cookieMy.getCookie('usermore').split(',')
-					if(cookieMy.arrsearch(loginZhang, shuzu)) {
-						var index = cookieMy.arrsearchXia(loginZhang, shuzu);
-						if(loginMimamd5 != shuzu[index + 1]) {
-							$(this).parents('#loginForm').find('.form_group').eq(1).find('.userPassword').val('')
-							$(this).parents('#loginForm').find('.form_group').eq(1).find('.tips').show()
+			alert('请输入账号密码')
 
-						} else {
-							if($(this).parents('#loginForm').find('.form_group').eq(2).find('.tips').css('display')=="none"){
-								cookieMy.addCookie('zhanghao1', loginZhang, 7)
-								cookieMy.addCookie('mima1', loginMimamd5, 7);
-								window.location = 'index.html';
-								
-							}
+		} else {
+
+			if(cookieMy.getCookie('usermore') == undefined) {
+				alert('没有数据请先注册')
+
+			} else {
+				var shuzu = cookieMy.getCookie('usermore').split(',')
+				if(cookieMy.arrsearch(loginZhang, shuzu)) {
+					var index = cookieMy.arrsearchXia(loginZhang, shuzu);
+					if(loginMimamd5 != shuzu[index + 1]) {
+						$(this).parents('#loginForm').find('.form_group').eq(1).find('.userPassword').val('')
+						$(this).parents('#loginForm').find('.form_group').eq(1).find('.tips').show()
+										
+					} else {
+						if($(this).parents('#loginForm').find('.form_group').eq(2).find('.tips').css('display') == "none") {
+							cookieMy.addCookie('zhanghao1', loginZhang, 7)
+							cookieMy.addCookie('mima1', loginMimamd5, 7);
+							/*记住密码操作*/
 							
+								if($('.operatePw').find('input').prop('checked')) {
+									cookieMy.addCookie('check',true)
+									$('.username').val(cookieMy.getCookie('zhanghao1'))
+									$('.userPassword').val(cookieMy.getCookie('mima1'))
+									
+								}
+								
+					
+
+							window.location = 'index.html';
 
 						}
 
-					} else {
-						$(this).parents('#loginForm').find('.form_group').eq(0).find('.tips').show()
-						$(this).parents('#loginForm').find('.form_group').eq(1).find('.userPassword').val('')
-
 					}
 
+				} else {
+					$(this).parents('#loginForm').find('.form_group').eq(0).find('.tips').show()
+					$(this).parents('#loginForm').find('.form_group').eq(1).find('.userPassword').val('')
+
 				}
-					
-					
-				}
-				
-	})
-	
-		$('.username').on('change',function(){
-		
-			if($(this).val().length==0){
-				$(this).siblings('.tips').show()
-				
-			}else{
-				$(this).siblings('.tips').hide()
-				
-			}
-		
-	})
-		
-		$('.userPassword').on('change',function(){
-		
-			if($(this).val().length==0){
-				$(this).siblings('.tips').show()
-				
-			}else{
-				$(this).siblings('.tips').hide()
-				
-			}
-		
-	})
-		
-		/*验证码验证2*/
-		$('.pin').on('change', function() {
-			var pinValue = $(this).val()
 
-			if(pinValue == $(this).siblings('img').attr('sid')) {
-				$(this).siblings('.tips').hide()
-
-			} else {
-
-				$(this).siblings('.tips').show()
-				$(this).siblings('.tips').html('验证码不正确')
 			}
 
-		})
+		}
 
+	})
+
+	$('.username').on('change', function() {
+
+		if($(this).val().length == 0) {
+			$(this).siblings('.tips').show()
+
+		} else {
+			$(this).siblings('.tips').hide()
+
+		}
+
+	})
+
+	$('.userPassword').on('change', function() {
+
+		if($(this).val().length == 0) {
+			$(this).siblings('.tips').show()
+
+		} else {
+			$(this).siblings('.tips').hide()
+
+		}
+
+	})
+
+	/*验证码验证2*/
+	$('.pin').on('change', function() {
+		var pinValue = $(this).val()
+
+		if(pinValue == $(this).siblings('img').attr('sid')) {
+			$(this).siblings('.tips').hide()
+
+		} else {
+
+			$(this).siblings('.tips').show()
+			$(this).siblings('.tips').html('验证码不正确')
+		}
+
+	})
 
 })();
